@@ -2,9 +2,9 @@ pipeline {
     agent any
     stages {
         stage('Build') {
+            echo 'Hello sumeyye zeynep'
             steps {
-                sh 'mvn -f hello-app/pom.xml -B -DskipTests clean package'
-                echo 'Hello sumeyye'
+                sh 'mvn -f hello-app/pom.xml -B -DskipTests clean package'       
             }
             post {
                 success {
